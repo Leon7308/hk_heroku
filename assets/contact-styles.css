@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+    background: url(assets/contact_bgtest.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+}
+
+body {
+	  background: url(/assets/contact_bgtest.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+
+  font-family: Proxima Nova;
+  padding: 10px;
+  font-size: 18px;
+}
+
+body text{
+    color: white;
+}
+
+h1{
+  color: white;
+}
+
+h3{
+  color: white;
+}
+
+.top-bar{
+ overflow: hidden;
+  background-color: black;
+  margin: -20px
+}
+
+.buttons{
+  white-space: nowrap;
+  display: flex;
+}
+
+.buttons a{
+  text-decoration: none;
+  margin: 1%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 2% 6%;
+  font-family: Proxima Nova;
+  font-weight: bold;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+
+.buttons a:hover{
+  color: #D3C48D;
+}
+
+.top-bar a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+form{
+  font-family: Proxima Nova;
+  font-weight: bold;
+  color: white;
+}
+
+#message{
+  padding: 10%;
+}
+
+#contactus {
+  margin: 10%;
+}
+
+#sub{
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  border: black;
+  background-color: black;
+  padding: 2% 6%;
+  font-family: Proxima Nova;
+  font-weight: bold;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+
+#sub:hover{
+  color: #D3C48D;
+}
+

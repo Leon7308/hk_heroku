@@ -1,0 +1,66 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Harjeet Khanduja</title>
+  </head>
+  
+	<div class="top-bar" style="width:50%; padding: 7px; padding-left: 8px;">
+			<a>__________</a>
+			
+			<a href="">Home</a>	
+			<a href="about">About</a>
+			<a href="https://medium.com/hr-tech-tips" target="_blank">Blog</a>
+			<a href="contact">Contact</a>
+	</div>
+
+  <div class="indexcollage">
+      <img src="{% static 'img2.png' %}" >
+  </div>
+	<body style="background-color: black;">
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style = " width:50%; float:right; overflow:hidden; height:100%; margin-top:-35px; margin-right: -8px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'carousel/1.png' %}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'carousel/2.png' %}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'carousel/3.png' %}" alt="Third slide">
+    </div>
+  </div>
+</div>
+
+<div class="Follow" style="width:50%;">
+	<a>Follow him on</a>
+	<a href="linkedin.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
+		
+	<a href="http://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+	
+	<a href="http://www.twitter.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg></a>
+	
+	<a href="http://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+	
+	<a href="" target="_blank" style="filter: invert(100%);"><svg width="100" height="21" viewBox="0 0 100 21" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="99" height="20" fill="black" stroke="#D3C48D"/><path d="M23.368 16.208C24.968 16.208 26.36 15.52 27.272 14.496V10.88H22.36V11.36H26.76V14.288C26.136 14.944 24.936 15.728 23.368 15.728C20.696 15.728 18.6 13.648 18.6 10.672C18.6 7.664 20.696 5.632 23.368 5.632C24.792 5.632 26.104 6.208 26.936 7.152L27.272 6.8C26.232 5.728 24.984 5.152 23.368 5.152C20.408 5.152 18.04 7.392 18.04 10.672C18.04 13.952 20.408 16.208 23.368 16.208ZM38.1681 16L33.7201 5.328H33.1121L28.6641 16H29.2561L30.4401 13.136H36.3921L37.5761 16H38.1681ZM36.2001 12.656H30.6321L33.4161 5.92L36.2001 12.656ZM45.78 16V15.52H40.42V5.328H39.908V16H45.78ZM53.7644 16V15.52H48.4044V5.328H47.8924V16H53.7644ZM62.4048 16V15.52H56.3888V10.752H62.2928V10.272H56.3888V5.808H62.4048V5.328H55.8768V16H62.4048ZM71.7746 16L68.4786 11.392C70.2066 11.392 71.6306 10.304 71.6306 8.352C71.6306 6.4 70.2066 5.328 68.4786 5.328H64.7986V16H65.3106V11.392H67.8706L71.1186 16H71.7746ZM68.4786 10.912H65.3106V5.808H68.4786C70.0466 5.808 71.0706 6.88 71.0706 8.352C71.0706 9.824 70.0466 10.912 68.4786 10.912ZM77.5735 16V11.376L81.8615 5.328H81.2055L77.3175 10.864L73.4295 5.328H72.7735L77.0615 11.376V16H77.5735Z" fill="white"/></svg></a>
+	<a style="float: right; padding-right: 0;">_____________________________________</a>
+</div>
+	</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

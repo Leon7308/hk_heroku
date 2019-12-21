@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Proxima Nova;
+  padding: 10px;
+  font-size: 18px;
+  background: white;
+}
+
+.top-bar{
+ overflow: hidden;
+  background-color: black;
+  margin: -20px
+}
+
+.buttons{
+  white-space: nowrap;
+  display: flex;
+}
+
+.buttons a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px 15px;
+  font-family: Proxima Nova;
+  font-weight: bold;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+
+.buttons a:hover{
+  color: #D3C48D;
+}
+
+
+.Follow{
+	 overflow: hidden;
+  background-color: black;
+  margin-left:-20px;
+  margin-right:-20px;
+  position:fixed;
+  bottom: 0;
+  width:100%;
+}
+
+
+.Follow a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.top-bar a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+.top-bar a:hover{
+  color: #D3C48D;  
+}
+
+#HK:hover{
+  color:white
+}
+
+.indexcollage{
+position:fixed;
+left: 0;
+top:33%;
+bottom:66%;
+width:40%;
+height:33%;
+}
+
+.indexcollage img{
+position:fixed;
+left:0;
+object-fit: contain;
+top:33%;
+bottom:66%;
+ width:50%;
+ height:33%;
+
+}
+
+.about_text p{
+  font-size: 22px;
+}
+
+.about_text img{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Follow svg{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+#message{
+  padding: 10%;
+}
+
+#contactbody{
+  background:url(./assets/contact_bgtest.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  color: white;
+}

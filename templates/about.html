@@ -1,0 +1,75 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harjeet Khanduja</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" >
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'hover.css' %}">
+</head>
+<body>
+	<div class="top-bar">
+			<a>__________</a>
+			<a href="../">Home</a>	
+			<a href="">About</a>
+			<a href="https://medium.com/hr-tech-tips" target="_blank">Blog</a>		
+			<a href="../contact">Contact</a>	
+			<a href="../" style="float: right; font-family: 'Playfair Display', serif;">Harjeet Khanduja</a>
+	</div>
+
+<table style="width: 100%; border-spacing: 0px" class="about_text">
+	<tr>
+		<td style="width: 50%">
+			<img style= "margin-top: 10%; margin-bottom: 10%"src="{% static './assets/about_title.jpg' %}">
+		</td>
+		<td style="width: 50%;">
+			<h1 style="font-family: Playfair Display; font-size: 75px">I'm Harjeet.</h1>
+			<h3 style="font-size: 36px">I make people laugh.</h3>
+			<h3 style="font-size: 36px; margin-right: 20%">I also try to make them <br>better leaders.</h3>
+			<p style="margin-right: 20%">
+				This branding expert does two things super well on his about page: He takes his work seriously, but doesn't take himself too seriously. Marketers know there's value to keeping a casual tone in the content they create, but in order to attract customers, you need to prove you have discipline and integrity. That's a tough balance to get right. Marc Ensign nails that balance between friendly and formal with a confident opening statement, followed by an amusing smiley photo of himself to set an inviting tone.
+			</p>
+			<div class="buttons">
+				<a class="hvr-grow" href="">DOWNLOAD BIO</a>
+				<a href="" style="color: white; background-color: white;"></a>
+				<a class="hvr-grow" href="">DOWNLOAD MEDIA KIT</a>
+			</div>
+		</td>
+	</tr>
+	<tr style=" background: #FDE8E2;">
+		<td style="width: 50%">
+			<p style="margin-left: 10%; margin-right: 15%">
+				This branding expert does two things super well on his about page: He takes his work seriously, but doesn't take himself too seriously. Marketers know there's value to keeping a casual tone in the content they create, but in order to attract customers, you need to prove you have discipline and integrity. That's a tough balance to get right. Marc Ensign nails that balance between friendly and formal with a confident opening statement, followed by an amusing smiley photo of himself to set an inviting tone. 
+			</p>
+		</td>
+		<td style="width: 50%">
+			<img src="{% static './assets/about_topic1.jpg' %}" style="margin-top: 5%;margin-bottom: 5%">
+		</td>
+	</tr>
+	<tr style="background: #E0F5FF;">
+		<td>
+			<img src="{% static './assets/about_topic2.png' %}" style="margin-top: 5%; margin-bottom: 5%; margin-left: 8%;">
+		</td>
+		<td>
+			<p style="margin-left: 15%; margin-right: 20%">This branding expert does two things super well on his about page: He takes his work seriously, but doesn't take himself too seriously. Marketers know there's value to keeping a casual tone in the content they create, but in order to attract customers, you need to prove you have discipline and integrity. That's a tough balance to get right. 
+
+			Marc Ensign nails that balance between friendly and formal with a confident opening statement, followed by an amusing smiley photo of himself to set an inviting tone. </p>
+		</td>
+	</tr>
+	<tr style=" background: #FDE8E2;">
+		<td style="width: 50%">
+			<p style="margin-left: 10%; margin-right: 15%">
+				This branding expert does two things super well on his about page: He takes his work seriously, but doesn't take himself too seriously. Marketers know there's value to keeping a casual tone in the content they create, but in order to attract customers, you need to prove you have discipline and integrity. That's a tough balance to get right. Marc Ensign nails that balance between friendly and formal with a confident opening statement, followed by an amusing smiley photo of himself to set an inviting tone. 
+			</p>
+		</td>
+		<td style="width: 50%">
+			<img src="{% static './assets/about_topic3.png' %}" style="margin-top: 5%;margin-bottom: 5%">
+		</td>
+	</tr>
+
+</table>
+</body>
+</html>

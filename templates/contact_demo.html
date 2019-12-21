@@ -1,0 +1,38 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harjeet Khanduja</title>
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+	<div class="top-bar">
+		<a>__________</a>
+		<a href="../">Home</a>	
+		<a href="../about">About</a>
+		<a href="https://medium.com/hr-tech-tips" target="_blank">Blog</a>		
+		<a href="">Contact</a>	
+		<a href="../" style="float: right; font-family: 'Playfair Display', serif;">Harjeet Khanduja</a>
+</div>
+
+<h1>Let's talk.</h1>
+<h3>Whether it’s a cold call for an upcoming festival, or a foreword for a book you’re writing, or maybe you just want to talk, fill in the form and I’ll get back to you!</h3>
+<form action = '/contact/' method = 'post'> 
+		{% csrf_token %}
+		<input type = "text" name = "name" placeholder = "Name *"><br>
+		<input type = "text" name = "email" placeholder = "email *"><br>
+		<input type = "text" name = "ph_no" placeholder = "Phone number"><br>
+		<input type = "text" name = "content" placeholder = "Content *"><br>
+		<input type="submit">
+</form>
+
+
+<div>
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
